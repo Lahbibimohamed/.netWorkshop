@@ -25,6 +25,14 @@ namespace PS.Domain
             }
 
         }
+        public static  void SetIsApproved(Provider P)
+        {
+            if(P.Password == P.ConfirmPassword) P.IsApproved = true;
+        }
+        public static void setIsApproved(string password, string confirmPassword, bool isapproved)
+        {
+            if (password == confirmPassword) isapproved = true;
+        }
     }
 
 }

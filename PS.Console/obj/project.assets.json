@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "PS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/PS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PS.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PS.Domain/PS.Domain.csproj",
+      "msbuildProject": "../PS.Domain/PS.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "PS.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\moham\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\moham\\source\\repos\\ProductStore\\PS.Domain\\PS.Domain.csproj": {
+              "projectPath": "C:\\Users\\moham\\source\\repos\\ProductStore\\PS.Domain\\PS.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

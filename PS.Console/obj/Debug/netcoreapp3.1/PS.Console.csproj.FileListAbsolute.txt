@@ -1,0 +1,17 @@
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Console.exe
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Console.deps.json
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Console.runtimeconfig.json
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Console.runtimeconfig.dev.json
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Console.dll
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Console.pdb
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Domain.dll
+C:\Users\moham\source\repos\ProductStore\PS.Console\bin\Debug\netcoreapp3.1\PS.Domain.pdb
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.csproj.AssemblyReference.cache
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.AssemblyInfoInputs.cache
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.AssemblyInfo.cs
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.csproj.CoreCompileInputs.cache
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.csproj.CopyComplete
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.dll
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.pdb
+C:\Users\moham\source\repos\ProductStore\PS.Console\obj\Debug\netcoreapp3.1\PS.Console.genruntimeconfig.cache
