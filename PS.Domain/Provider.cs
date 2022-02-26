@@ -44,13 +44,36 @@ namespace PS.Domain
             }
 
         }
-        public static  void SetIsApproved(Provider P)
+        public static void SetIsApproved(Provider P)
         {
             if(P.Password == P.ConfirmPassword) P.IsApproved = true;
         }
         public static void setIsApproved(string password, string confirmPassword, bool isapproved)
         {
             if (password == confirmPassword) isapproved = true;
+        }
+        public bool Login(String nom, String password)
+        {
+            if (password == Password && nom == Username) return true;
+            else return false;
+        }
+        public bool Login(String nom, String password,String email)
+        {
+            if (password == Password && nom == Username && email==Email) return true;
+            else return false;
+        }
+        public  bool Loginn(String nom, String password, String email=null)
+        {
+            if (email == null)
+            {
+                if (password == Password && nom == Username) return true;
+                else return false;
+            }
+            else
+            {
+                if (password == Password && nom == Username && email == Email) return true;
+                else return false;
+            }
         }
     }
 

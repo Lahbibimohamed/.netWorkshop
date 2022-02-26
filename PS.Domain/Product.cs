@@ -20,5 +20,10 @@ namespace PS.Domain
             Console.WriteLine("Product Name: {0}, Quantity:{1}", Name, Quantity);
 
         }
+        public virtual void GetMyType()
+        {
+            Console.WriteLine("PRODUCT");
+
+        }
     }
 }
