@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PS.Domain
 {
-   public  class Provider:Concept
+    public class Provider : Concept
     {
         String password;
         public String Password
@@ -46,7 +46,7 @@ namespace PS.Domain
         }
         public static void SetIsApproved(Provider P)
         {
-            if(P.Password == P.ConfirmPassword) P.IsApproved = true;
+            if (P.Password == P.ConfirmPassword) P.IsApproved = true;
         }
         public static void setIsApproved(string password, string confirmPassword, bool isapproved)
         {
@@ -57,12 +57,12 @@ namespace PS.Domain
             if (password == Password && nom == Username) return true;
             else return false;
         }
-        public bool Login(String nom, String password,String email)
+        public bool Login(String nom, String password, String email)
         {
-            if (password == Password && nom == Username && email==Email) return true;
+            if (password == Password && nom == Username && email == Email) return true;
             else return false;
         }
-        public  bool Loginn(String nom, String password, String email=null)
+        public bool Loginn(String nom, String password, String email = null)
         {
             if (email == null)
             {
@@ -73,6 +73,58 @@ namespace PS.Domain
             {
                 if (password == Password && nom == Username && email == Email) return true;
                 else return false;
+            }
+        }
+        public void GetProducts(string filterType, string filterValue)
+        {
+            switch (filterType)
+            {
+                case "DATEPROD":
+                    foreach (Product p in Products)
+                    {
+                        if (p.DateProd.ToString() == filterValue)
+                            p.GetDetails();
+                    }
+                    break;
+                case "Description":
+                    foreach (Product p in Products)
+                    {
+                        if (p.Description == filterValue)
+                            p.GetDetails();
+                    }
+                    break;
+
+                case "Name":
+                    foreach (Product p in Products)
+                    {
+                        if (p.Name == filterValue)
+                            p.GetDetails();
+                    }
+                    break;
+
+                case "Price":
+                    foreach (Product p in Products)
+                    {
+                        if (p.Price.ToString() == filterValue)
+                            p.GetDetails();
+                    }
+                    break;
+
+                case "ProductId":
+                    foreach (Product p in Products)
+                    {
+                        if (p.ProductId.ToString() == filterValue)
+                            p.GetDetails();
+                    }
+                    break;
+
+                case "Quantity":
+                    foreach (Product p in Products)
+                    {
+                        if (p.Quantity.ToString() == filterValue)
+                            p.GetDetails();
+                    }
+                    break;
             }
         }
     }
