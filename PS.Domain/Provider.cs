@@ -6,9 +6,28 @@ namespace PS.Domain
 {
    public  class Provider:Concept
     {
-        public String Password { get; set; }
-        public String ConfirmPassword { get; set; }
-
+        String password;
+        public String Password
+        {
+            get { return password; }
+            set
+            {
+                if (value.Length >= 5 && value.Length <= 20)
+                    password = value;
+                else Console.WriteLine("la taille du password doit etre entre 5 et 20");
+            }
+        }
+        string confirmPassword;
+        public string ConfirmPassword
+        {
+            get { return confirmPassword; }
+            set
+            {
+                if (Password == value)
+                    confirmPassword = value;
+                else Console.WriteLine("les mots de passe ne sont pas identiques");
+            }
+        }
 
         public DateTime DateCreated { get; set; }
         public string Email { get; set; }
